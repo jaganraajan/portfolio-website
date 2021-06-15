@@ -41,7 +41,7 @@ export default function Components(props) {
         color="transparent"
         changeColorOnScroll={{
           height: 200,
-          color: "white",
+          color: "primary",
         }}
         {...rest}
       />
@@ -50,10 +50,8 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Your next frontend developer</h1>
-                <h3 className={classes.subtitle}>
-                  Your next frontend developer
-                </h3>
+                <h1 className={classes.title}>Your next Frontend Developer!</h1>
+                <button className={classes.button}>Hire Me</button>
               </div>
             </GridItem>
           </GridContainer>

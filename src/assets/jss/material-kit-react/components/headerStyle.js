@@ -1,7 +1,6 @@
 import {
   container,
   defaultFont,
-  primaryColor,
   infoColor,
   successColor,
   warningColor,
@@ -54,7 +53,7 @@ const headerStyle = {
   title: {
     ...defaultFont,
     lineHeight: "30px",
-    fontSize: "18px",
+    fontSize: "28px",
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
@@ -69,7 +68,7 @@ const headerStyle = {
     margin: "20px 10px",
   },
   primary: {
-    backgroundColor: primaryColor,
+    backgroundColor: "#1A0D36",
     color: "#FFFFFF",
     boxShadow:
       "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(156, 39, 176, 0.46)",

@@ -18,7 +18,7 @@ const componentsStyle = {
     margin: "10px 0 0",
   },
   main: {
-    background: "#FFFFFF",
+    background: "#291b6e",
     position: "relative",
     zIndex: "3",
   },
@@ -33,6 +33,15 @@ const componentsStyle = {
   },
   textCenter: {
     textAlign: "center",
+  },
+  button: {
+    color: "#CCCCCC",
+    backgroundColor: "#3d26b3",
+    marginTop: "30px",
+    fontSize: "20px",
+    display: "block",
+    padding: "10px 30px",
+    borderRadius: "5px",
   },
 };
 
