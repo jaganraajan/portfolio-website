@@ -34,6 +34,12 @@ const headerStyle = {
     position: "absolute",
     zIndex: "1100",
   },
+  logo: {
+    height: "10px",
+    width: "10px",
+    backgroundImage: "#fff",
+    objectFit: "contain",
+  },
   fixed: {
     position: "fixed",
     zIndex: "1100",

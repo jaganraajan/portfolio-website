@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
+import Switch from "@material-ui/core/Switch";
 
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
@@ -17,15 +18,37 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
-
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
-
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
+  const [checkedA, setCheckedA] = React.useState(true);
+
   return (
     <List className={classes.list}>
+      <ListItem className={classes.listItem}>
+        <FormControlLabel
+                    control={
+                      <Switch
+                        checked={checkedA}
+                        onChange={(event) => setCheckedA(event.target.checked)}
+                        value="checkedA"
+                        classes={{
+                          switchBase: classes.switchBase,
+                          checked: classes.switchChecked,
+                          thumb: classes.switchIcon,
+                          track: classes.switchBar,
+                        }}
+                      />
+                    }
+                    classes={{
+                      label: classes.label,
+                    }}
+                    label=""
+                  />
+      </ListItem>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
